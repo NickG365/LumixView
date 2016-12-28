@@ -36,7 +36,7 @@ public class RequestHandler implements Runnable
         this.scheduler = Executors.newScheduledThreadPool( 1 );
         
         this.makeInitialRequest();
-        this.getScheduler().scheduleAtFixedRate( this, 15, 15, TimeUnit.SECONDS );
+        this.getScheduler().scheduleAtFixedRate( this, 10, 10, TimeUnit.SECONDS );
     }
     
     @Override
